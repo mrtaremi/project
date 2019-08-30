@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% block head %}
+	<title>kia - Iranoni</title>
+
+	{% endblock %}
+	<meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="webuni, education, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="{% static 'index/img/favicon.ico'%}" rel="shortcut icon" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i"
+		rel="stylesheet">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{% static 'index/css/bootstrap.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'index/css/font-awesome.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'index/css/owl.carousel.css' %}" />
+	<link rel="stylesheet" href="{% static 'index/css/style.css' %}" />
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css"/>
+
+
+</head>
+
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<!-- <img src="{% static 'index/img/logo.png' %}" alt=""> -->
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					<nav class="main-menu">
+						<ul>
+
+							<li><a href="http://127.0.0.1:8000/place/{{ randomed.id }}">نمیدونم کجا برم؟</a></li>
+							<li><a href="/admin">مدیریت</a></li>
+							<li><a href="http://127.0.0.1:8000/search/?name=">مکان ها</a></li>
+							<li><a href="/">استان ها</a></li>
+							<li><a href="/">خانه</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="{% static 'index/img/page-bg/2.jpg' %}">
+		<div class="container">
+			<div class="site-breadcrumb">
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	<section class="search-section ss-other-page">
+		<div class="container">
+			<div class="search-warp">
+				<div class="section-title text-white">
+					<h2><span>استان یا مکانی مد نظرتون هست ؟؟؟</span></h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1">
+						<!-- search form -->
+						<form class="course-search-form">
+							<form method="get" action="/search">
+								<input type="text" placeholder="استان" name="state__name" id="id_state__name">
+								<input type="text" class="last-m" placeholder="مکان" name="name" id="id_name">
+								<button class="site-btn btn-dark" type="submit">!بگرد</button>
+
+
+								<!-- <p>
+									 <label for="id_name">نام:</label>
+									 <input type="text" name="name" id="id_name">
+								</p>
+								<p>
+									<label for="id_state__name">استان name contains:</label>
+									<input type="text" name="state__name" id="id_state__name">
+								</p> -->
+							</form>
+
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- search section end -->
+	{% block content %}
+
+	{% endblock %}
+	<!-- footer section -->
+	<footer class="footer-section pb-0">
+
+		<div class="footer-bottom">
+			<div class="footer-warp">
+				<ul class="footer-menu">
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+				<div class="copyright">Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script> All rights reserved | This project is made by by <a href="http://mrtaremi.ir" target="_blank">mrtaremi</a></div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer section end -->
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'index/js/jquery-3.2.1.min.js'%}"></script>
+	<script src="{% static 'index/js/bootstrap.min.js'%}"></script>
+	<script src="{% static 'index/js/mixitup.min.js'%}js/mixitup.min.js"></script>
+	<script src="{% static 'index/js/circle-progress.min.js'%}"></script>
+	<script src="{% static 'index/js/owl.carousel.min.js'%}"></script>
+	<script src="{% static 'index/js/main.js'%}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"
+		integrity="sha256-v789mr/zBbgR53mfydCI78CSAF+9+nRqu+JRfs1UPg0=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"
+		integrity="sha256-l+AmZGiFz41J+gms80qC7faslJDberZDhjEsmDmQy8s=" crossorigin="anonymous"></script>
+</body>
+
+</html>

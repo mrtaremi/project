@@ -1,0 +1,35 @@
+{% extends "history/base.html" %}
+{% block content %}
+<section>
+    <br>
+        <div class="container">
+                <div class="row">
+                    <div name="categorys" id="categorys">
+                        <!-- <form method="get" action="/search">
+                            <p>
+                                 <label for="id_name">نام:</label>
+                                 <input type="text" name="name" id="id_name">
+                            </p>
+                            <p>
+                                <label for="id_state__name">استان name contains:</label>
+                                <input type="text" name="state__name" id="id_state__name">
+                            </p>
+                            <button type="submit">Search</button>
+                        </form> -->
+                    </div>
+                </div>
+                <div class="row">
+                    {% for state in state_list %}
+                        <div class="col-2 state">
+                            <a href="state/{{ state.en_name }}"><button class="uk-button uk-width-1-1 uk-button-secondary uk-button-large">{{ state.name }}</button></a>
+                        </div>
+                    {% empty %}
+                        <div class="col-2">
+                            هیچ استانی موجود نیست.
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <br>
+</section>
+{% endblock %}

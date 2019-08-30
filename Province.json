@@ -1,0 +1,126 @@
+[
+  {
+    "name": "آذربایجان شرقی",
+    "en_name": "Azerbaijan_East"
+  },
+  {
+    "name": "آذربایجان غربی",
+    "en_name": "Azerbaijan_West"
+  },
+  {
+    "name": "اردبیل",
+    "en_name": "Ardabil"
+  },
+  {
+    "name": "اصفهان",
+    "en_name": "Isfahan"
+  },
+  {
+    "name": "البرز",
+    "en_name": "Alborz"
+  },
+  {
+    "name": "ایلام",
+    "en_name": "Ilam"
+  },
+  {
+    "name": "بوشهر",
+    "en_name": "Bushehr"
+  },
+  {
+    "name": "تهران",
+    "en_name": "Tehran"
+  },
+  {
+    "name": "چهارمحال و بختیاری",
+    "en_name": "ChaharMahaalandBakhtiari"
+  },
+  {
+    "name": "خراسان جنوبی",
+    "en_name": "Khorasan_South"
+  },
+  {
+    "name": "خراسان رضوی",
+    "en_name": "Khorasan_Razavi"
+  },
+  {
+    "name": "خراسان شمالی",
+    "en_name": "Khorasan_North"
+  },
+  {
+    "name": "خوزستان",
+    "en_name": "Khuzestan"
+  },
+  {
+    "name": "زنجان",
+    "en_name": "Zanjan"
+  },
+  {
+    "name": "سمنان",
+    "en_name": "Semnan"
+  },
+  {
+    "name": "سیستان و بلوچستان",
+    "en_name": "SistanandBaluchestan"
+  },
+  {
+    "name": "فارس",
+    "en_name": "Fars"
+  },
+  {
+    "name": "قزوین",
+    "en_name": "Qazvin"
+  },
+  {
+    "name": "قم",
+    "en_name": "Qom"
+  },
+  {
+    "name": "کردستان",
+    "en_name": "Kurdistan"
+  },
+  {
+    "name": "کرمان",
+    "en_name": "Kerman"
+  },
+  {
+    "name": "کرمانشاه",
+    "en_name": "Kermanshah"
+  },
+  {
+    "name": "کهگیلویه وبویراحمد",
+    "en_name": "Kohgiluyeh"
+  },
+  {
+    "name": "گلستان",
+    "en_name": "Golestan"
+  },
+  {
+    "name": "گیلان",
+    "en_name": "Gilan"
+  },
+  {
+    "name": "لرستان",
+    "en_name": "Lorestan"
+  },
+  {
+    "name": "مازندران",
+    "en_name": "Mazandaran"
+  },
+  {
+    "name": "مرکزی",
+    "en_name": "Markazi"
+  },
+  {
+    "name": "هرمزگان",
+    "en_name": "Hormozgan"
+  },
+  {
+    "name": "همدان",
+    "en_name": "Hamedan"
+  },
+  {
+    "name": "یزد",
+    "en_name": "Yazd"
+  }
+]

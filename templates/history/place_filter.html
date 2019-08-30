@@ -1,0 +1,40 @@
+{% extends "history/base.html" %}
+{% load static %}
+<!-- {% load widget_tweaks %} -->
+{% block head %}
+<title>سرچ</title>
+<link rel="stylesheet" href="{% static "index/style.css" %}">
+{% endblock %}
+{% block content %}
+<section>
+    <br>
+    <div class="container">
+        <div class="row">
+            {% for place in filter.qs %}
+            <div class="col-12 col-sm-6 col-md-4 image-grid-item {{ place.category }}">
+                    <a href="/place/{{ place.id }}">
+
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="{{ place.thumb.url }}" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+
+                                <h3 class="uk-card-title">{{ place.name }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            {% empty %}
+            <div class="col-12">
+                هیچ مکانی موجود نیست
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
