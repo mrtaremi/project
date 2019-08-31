@@ -43,7 +43,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<!-- <img src="{% static 'index/img/logo.png' %}" alt=""> -->
+						<img src="{% static 'index/img/logo2.png'%}" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -52,10 +52,9 @@
 				<div class="col-lg-9 col-md-9">
 					<nav class="main-menu">
 						<ul>
-
-							<li><a href="http://127.0.0.1:8000/place/{{ randomed.id }}">نمیدونم کجا برم؟</a></li>
+							<li><a href="/place/{{ randomed.id }}">نمیدونم کجا برم؟</a></li>
 							<li><a href="/admin">مدیریت</a></li>
-							<li><a href="http://127.0.0.1:8000/search/?name=">مکان ها</a></li>
+							<li><a href="/search/?name=">مکان ها</a></li>
 							<li><a href="/">استان ها</a></li>
 							<li><a href="/">خانه</a></li>
 						</ul>
@@ -64,6 +63,7 @@
 			</div>
 		</div>
 	</header>
+
 	<!-- Header section end -->
 
 	<!-- Page info -->
@@ -120,8 +120,8 @@
 		<div class="footer-bottom">
 			<div class="footer-warp">
 				<ul class="footer-menu">
-					<li><a href="#">سایت دانشکده شمسی پور </a></li>
-					<li><a href="#">سایت دانشگاه فنی و حرفه ای </a></li>
+					<li><a href="https://shamsipour.tvu.ac.ir">سایت دانشکده شمسی پور </a></li>
+					<li><a href="https://tvu.ac.ir/">سایت دانشگاه فنی و حرفه ای </a></li>
 					<!-- <li><a href="#">Privacy</a></li> -->
 				</ul>
 				<div class="copyright">Copyright &copy;
@@ -133,17 +133,18 @@
 	</footer>
 	<!-- footer section end -->
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="{% static 'index/js/jquery-3.2.1.min.js'%}"></script>
-	<script src="{% static 'index/js/bootstrap.min.js'%}"></script>
-	<script src="{% static 'index/js/mixitup.min.js'%}js/mixitup.min.js"></script>
-	<script src="{% static 'index/js/circle-progress.min.js'%}"></script>
-	<script src="{% static 'index/js/owl.carousel.min.js'%}"></script>
-	<script src="{% static 'index/js/main.js'%}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"
 		integrity="sha256-v789mr/zBbgR53mfydCI78CSAF+9+nRqu+JRfs1UPg0=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"
 		integrity="sha256-l+AmZGiFz41J+gms80qC7faslJDberZDhjEsmDmQy8s=" crossorigin="anonymous"></script>
+	<!--====== Javascripts & Jquery ======-->
+	<script type="text/javascript"  crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/bootstrap.min.js'%}"></script>
+	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/mixitup.min.js'%}"></script>
+	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/circle-progress.min.js'%}"></script>
+	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/owl.carousel.min.js'%}"></script>
+	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/main.js'%}"></script>
+	
 </body>
 
 </html>

@@ -41,7 +41,7 @@ class PlaceView(DetailView):
 
 
 def add(request):
-    with open("./Province.json", "r") as f:
+    with open("./Province.json", "r", encoding="utf8") as f:
         json_data = json.load(f)
         for state in json_data:
             State.objects.create(name=state['name'], en_name=state['en_name'])
@@ -52,7 +52,7 @@ def add(request):
 
 
 def addp(request):
-    with open("./FakePlace.json", "r") as f:
+    with open("./FakePlace.json", "r", encoding="utf8") as f:
         json_data = json.load(f)
         for state in json_data:
             Place.objects.create(id=state['id'], name=state['name'], thumb=state['thumb'], desc=state['desc'], url=state['url'], category_id=state['category_id'], state_id=state['state_id'])
