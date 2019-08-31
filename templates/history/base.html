@@ -67,7 +67,7 @@
 	<!-- Header section end -->
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg" data-setbg="{% static 'index/img/page-bg/2.jpg' %}">
+	<div class="page-info-section set-bg" data-setbg="{% static 'index/img/page-bg/2.png' %}">
 		<div class="container">
 			<div class="site-breadcrumb">
 			</div>
@@ -87,20 +87,10 @@
 					<div class="col-lg-10 offset-lg-1">
 						<!-- search form -->
 						<form class="course-search-form">
-							<form method="get" action="/search">
-								<input type="text" placeholder="استان" name="state__name" id="id_state__name">
+							<form method="get" action="/search/?name=">
+								<!-- <input type="text" placeholder="استان" name="state__name" id="id_state__name"> -->
 								<input type="text" class="last-m" placeholder="مکان" name="name" id="id_name">
 								<button class="site-btn btn-dark" type="submit">!بگرد</button>
-
-
-								<!-- <p>
-									 <label for="id_name">نام:</label>
-									 <input type="text" name="name" id="id_name">
-								</p>
-								<p>
-									<label for="id_state__name">استان name contains:</label>
-									<input type="text" name="state__name" id="id_state__name">
-								</p> -->
 							</form>
 
 
@@ -139,12 +129,14 @@
 		integrity="sha256-l+AmZGiFz41J+gms80qC7faslJDberZDhjEsmDmQy8s=" crossorigin="anonymous"></script>
 	<!--====== Javascripts & Jquery ======-->
 	<script type="text/javascript"  crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript"  crossorigin="anonymous" src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
 	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/bootstrap.min.js'%}"></script>
 	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/mixitup.min.js'%}"></script>
 	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/circle-progress.min.js'%}"></script>
 	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/owl.carousel.min.js'%}"></script>
 	<script type="text/javascript"  crossorigin="anonymous" src="{% static 'index/js/main.js'%}"></script>
-	
+	{% block script %}
+	{% endblock %}
 </body>
 
 </html>

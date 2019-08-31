@@ -18,27 +18,23 @@
                 <li class="control" data-filter=".cat4">تفریحی</li>
             </ul>
             <div class="row course-items-area">
+
                 {% for place in filter.qs %}
-                <div class="mix col-12 col-sm-6 col-md-4 cat{{ place.category.id }}">
-                    <div class=" image-grid-item">
-                        <a href="/place/{{ place.id }}">
-
-                            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
-                                uk-grid>
-                                <div class="uk-card-media-left uk-cover-container">
-                                    <img src="{{ place.thumb.url }}" alt="" uk-cover>
-                                    <canvas width="600" height="400"></canvas>
-                                </div>
-                                <div>
-                                    <div class="uk-card-body">
-
-                                        <h3 class="uk-card-title">{{ place.name }}</h3>
-                                    </div>
+                <div class="mix col-lg-3 col-md-4 col-sm-6  cat{{ place.category.id }}">
+                    <a href="/place/{{ place.id }}">
+                        <div class="course-item">
+                            <div class="course-thumb set-bg" data-setbg="{{ place.thumb.url }}">
+                                <div class="price">{{ place.category }}</div>
+                            </div>
+                            <div class="course-info">
+                                <div class="course-text">
+                                    <h5>{{ place.name }}</h5>
                                 </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
+
                 {% empty %}
                 <div class="col-12">
                     <center>

@@ -9,6 +9,9 @@ from history.filters import PlaceFilter
 from history.models import State, Place, Category
 
 
+from django.core.paginator import Paginator
+
+
 def state_list(request):
     f = PlaceFilter(request.GET, queryset=Place.objects.all())
     s = State.objects.all()
@@ -23,10 +26,15 @@ def place_search(request):
 
 
 def place_list(request, state):
+    
+
+
+
     print(Place.objects.all()[0].image.all())
     f = PlaceFilter(request.GET, queryset=Place.objects.filter(state__en_name=state))
     category = Category.objects.all()
     randomed = random.choice(Place.objects.all())
+    
     return render(request, 'history/place_filter.html', {'filter': f, 'category': category, 'randomed': randomed})
 
 
