@@ -15,7 +15,7 @@ class StateAdmin(admin.ModelAdmin):
 class PlaceAdmin(admin.ModelAdmin):
     list_display = ('name','category','state',)
     search_fields = ['name','category',]
-    list_filter = ('category',)
+    list_filter = ('category','state')
     autocomplete_fields = ['state']
 
 

@@ -14,10 +14,6 @@ if settings.DEBUG:
     urlpatterns += [
         url(r"^add/$", views.add)
     ]
-if settings.DEBUG:
-    urlpatterns += [
-        url(r"^addp/$", views.add)
-    ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
