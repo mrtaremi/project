@@ -6,6 +6,6 @@ Install steps:
 3- Install requirements with command <code>pip install -r requirements.txt</code><br>
 4- run <code>python manage.py migrate</code><br>
 4- run <code>python manage.py createsuperuser</code><br>
-5- run with <code>python manage.py runserver</code>
+5- run with <code>python manage.py runserver</code><br>
 6- open url <code>http://localhost:8000/add</code> for add all States at Province.json<br>
 
